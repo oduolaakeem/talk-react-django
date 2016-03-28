@@ -1,7 +1,9 @@
-const Link = (props) =>
-  <a onClick={() => pushState(props.to)}>
-    {props.children}
-  </a>;
+function Link(props) {
+  return (
+    <a onClick={() => pushState(props.to)}>
+      {props.children}
+    </a>
+  );
+}
 
-
-ReactDOM.render(<Link to="/home">Home</Link>, mountNode);
+ReactDOM.render(<HelloWorld name="Budapest" />, mountNode);

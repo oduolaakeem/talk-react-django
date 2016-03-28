@@ -63,9 +63,47 @@ export default class Presentation extends React.Component {
       <Spectacle theme={theme}>
         <Deck transition={["fade"]} transitionDuration={200}>
           {/* What is ReactJS? */}
-          <Slide>
+          <Slide notes="Introduction and thank you">
             <Heading fit caps>What is ReactJS</Heading>
             <Heading lineHeight={2} fit>and why there’s such a buzz around it</Heading>
+          </Slide>
+
+          <Slide notes="full-stack developer, Brno, PyCon CZ organizer">
+            <Heading size={1}>Tomáš Ehrlich</Heading>
+            <Heading size={2}>@tomas_ehrlich</Heading>
+          </Slide>
+
+          <Slide notes="Summary in one nickname">
+            <Heading>Tricoder</Heading>
+            <Appear><Text>Triathlon + Programming</Text></Appear>
+            <Appear><Text textSize="0.8em">... and hidden reference to Star Trek.</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Triathlon</Heading>
+            <Appear><Text>Swim. Bike. Run.</Text></Appear>
+            <Appear><Text>Eat. Sleep.</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading fit>Web development</Heading>
+            <Appear><Text>Backend. Frontend.</Text></Appear>
+            <Appear><Text>UX. Design. DevOps.</Text></Appear>
+          </Slide>
+
+          <Slide notes="What triathlon and web development have in common">
+            <Heading>Diversity</Heading>
+          </Slide>
+
+          <Slide>
+            <Heading>Shared knowledge</Heading>
+          </Slide>
+
+          <Slide>
+            <Heading>Outline</Heading>
+            <Appear><Text>Brief intro to ReactJS</Text></Appear>
+            <Appear><Text>React in Django</Text></Appear>
+            <Appear><Text>Django in React</Text></Appear>
           </Slide>
 
           <Slide bgColor="white" notes="ReactJS motto, like Django is framework for perfectionists with deadlines">
@@ -88,7 +126,7 @@ export default class Presentation extends React.Component {
           <Slide notes="Compared to Django, it's a template engine.">
             <Heading>Template engine</Heading>
             <Appear>
-              <Text>Transform data into UI (DOM, HTML)</Text>
+              <Text>Transform data into UI</Text>
             </Appear>
           </Slide>
 
@@ -97,15 +135,6 @@ export default class Presentation extends React.Component {
             <CodePane
               lang="jsx"
               source={require("!!raw!../assets/simple_component.js")}
-              margin="20px auto"
-            />
-          </Slide>
-
-          <Slide notes="Example: ES6.">
-            <Heading fit>Component (ES6)</Heading>
-            <CodePane
-              lang="jsx"
-              source={require("!!raw!../assets/simple_component_es6.js")}
               margin="20px auto"
             />
           </Slide>
@@ -131,7 +160,7 @@ export default class Presentation extends React.Component {
 
           <Slide bgColor="white" notes="Render data and handle events (event handlers are attached to DOM elements)">
             <BlockQuote>
-              <Quote textColor="black">Do one think<br /> and do it well</Quote>
+              <Quote textColor="black">Do one thing<br /> and do it well</Quote>
               <Cite>Unix philosophy</Cite>
             </BlockQuote>
           </Slide>

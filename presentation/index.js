@@ -32,7 +32,7 @@ import createTheme from "spectacle/lib/themes/default";
 //import Interactive from "../assets/interactive";
 
 // Require CSS
-require("normalize.css");
+require("normalize.css/normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
 

@@ -203,14 +203,15 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide>
-            <Heading>What the JSX?</Heading>
+            <Heading>What's the JSX?</Heading>
           </Slide>
 
           <Slide>
             <Heading>JSX</Heading>
+            <Text>Optional JS preprocessor</Text>
             <CodePane
               lang="jsx"
-              source={require("!!raw!../assets/simple_component_es6.js")}
+              source={require("!!raw!../assets/simple_component.js")}
               margin="20px auto"
             />
           </Slide>
@@ -219,7 +220,7 @@ export default class Presentation extends React.Component {
             <Heading>Compiled JSX</Heading>
             <CodePane
               lang="jsx"
-              source={require("raw!../assets/simple_component_es6.js")}
+              source={require("raw!../assets/simple_component.js")}
               margin="20px auto"
             />
           </Slide>
@@ -229,6 +230,10 @@ export default class Presentation extends React.Component {
             <Heading>not revolution</Heading>
           </Slide>
 
+          <Slide notes="Django and React, another difference">
+            <Heading>Components vs. Templates</Heading>
+          </Slide>
+
           <Slide>
             <Heading>Django Templates</Heading>
             <Heading size={2} fit>Inheritance and custom tags</Heading>
@@ -236,11 +241,11 @@ export default class Presentation extends React.Component {
 
           <Slide>
             <Heading>React Components</Heading>
-            <Heading size={2}>Separation of concerns</Heading>
+            <Heading size={2} fit>Separation of concerns</Heading>
           </Slide>
 
           <Slide>
-            <Heading>Bootstrap in HTML</Heading>
+            <Heading fit>Bootstrap (HTML)</Heading>
             <CodePane
               lang="html"
               source={require("!!raw!../assets/bootstrap_component.html")}
@@ -249,7 +254,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide>
-            <Heading>Bootstrap in JSX</Heading>
+            <Heading fit>Bootstrap (JSX)</Heading>
             <CodePane
               lang="jsx"
               source={require("!!raw!../assets/bootstrap_component.js")}
@@ -271,13 +276,143 @@ export default class Presentation extends React.Component {
             <Appear><Text>Components, not templates</Text></Appear>
           </Slide>
 
-          <Slide>React in Django apps</Slide>
-
-          <Slide notes="">
-            <Heading fit>Data manipulation</Heading>
-            <Text>Example: Insert item into list</Text>
-            <Image src={images.insertList.replace("/", "")} margin="0px auto 40px" height="400px"/>
+          <Slide>
+            <Heading>React in Django</Heading>
           </Slide>
+
+          <Slide>
+            <Heading>Facade</Heading>
+            <Text>Take a Django app and add React frontend</Text>
+          </Slide>
+
+          <Slide>
+            <Heading>Advantages</Heading>
+            <Appear><Text>Easy! Try it now!</Text></Appear>
+            <Appear><Text>Usable with existing project</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Disadvantages</Heading>
+            <Appear><Text>Not DRY</Text></Appear>
+            <Appear><Text>Poor SEO</Text></Appear>
+          </Slide>
+
+          <Slide />
+
+          <Slide>
+            <Heading>Full-stack React</Heading>
+          </Slide>
+
+          <Slide>
+            <Heading fit>Replace Views and Templates</Heading>
+            <Appear><Text>Django - API</Text></Appear>
+            <Appear><Text>React - frontend & backend</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Server-side React</Heading>
+            <Appear><Text>Fetch initial data</Text></Appear>
+            <Appear><Text>Render initial markup</Text></Appear>
+            <Appear><Text>Later, attach JS in browser</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Advantages</Heading>
+            <Appear><Text>DRY</Text></Appear>
+            <Appear><Text>Good for SEO</Text></Appear>
+            <Appear><Text>Modular design</Text></Appear>
+            <Appear><Text>(REST) API for free</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Disadvantages</Heading>
+            <Appear><Text>Needs to replace existing code</Text></Appear>
+            <Appear><Text>More complex</Text></Appear>
+            <Appear><Text>Django Admin...</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Best usecase</Heading>
+            <Appear><Text>Dynamic websites like GitHub</Text></Appear>
+            <Appear><Text>Web applications (FB, Slack)</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Not so good for</Heading>
+            <Appear><Text>Static websites (Archives)</Text></Appear>
+          </Slide>
+
+          <Slide notes="Django is a shield">
+            <Heading>Security</Heading>
+            <Text>Django is safe by default</Text>
+            <Appear><Text>ExpressJS requires more setup</Text></Appear>
+          </Slide>
+
+          <Slide notes="Everything we want to use needs REST API">
+            <Heading>The future</Heading>
+            <Appear><Text>REST API for Django Admin</Text></Appear>
+            <Appear><Text>REST API for Django Forms</Text></Appear>
+            <Appear><Text>Anything we need...</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Django in React</Heading>
+          </Slide>
+
+          <Slide notes="When you remove everything from Django?">
+            <Heading>What is Django?</Heading>
+          </Slide>
+
+          <Slide notes="Baked best practices and design decisions, shared among projects">
+            <Heading>Best practices</Heading>
+            <Text>And good design decisions</Text>
+          </Slide>
+
+          <Slide notes="All apps have the same installation procedure">
+            <Heading>Opinionated framework</Heading>
+            <Appear><Text>Good for reusable apps</Text></Appear>
+          </Slide>
+
+          <Slide notes="No framework, only starter kits or dev stacks">
+            <Heading>What about ReactJS?</Heading>
+          </Slide>
+
+          <Slide notes="React isn't as mature as Django">
+            <Heading>Best practices varies</Heading>
+            <Text>And evolve very quickly</Text>
+          </Slide>
+
+          <Slide>
+            <Heading>No reusable apps</Heading>
+            <Text>Only components</Text>
+          </Slide>
+
+          <Slide>
+            <Heading>The tip of the iceberg</Heading>
+            <Appear><Text>Bundler and compiler (webpack, browserify)</Text></Appear>
+            <Appear><Text>Data (Redux, Flux, ...)</Text></Appear>
+            <Appear><Text>REST API (tons of libs)</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Django-like React framework?</Heading>
+            <Text>... let's call it Reznor for now.</Text>
+          </Slide>
+
+          <Slide>
+            <Heading>Reusable apps</Heading>
+            <Appear><Text>Configurable</Text></Appear>
+          </Slide>
+
+          <Slide notes="Authentication and user management is so complicated">
+            <Heading>Proof of concept</Heading>
+            <Appear><Text>Authentication library</Text></Appear>
+          </Slide>
+
+          <Slide>
+            <Heading>Thank you</Heading>
+          </Slide>
+
         </Deck>
       </Spectacle>
     );

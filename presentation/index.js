@@ -404,11 +404,6 @@ export default class Presentation extends React.Component {
             <Appear><Text>Configurable</Text></Appear>
           </Slide>
 
-          <Slide notes="Authentication and user management is so complicated">
-            <Heading>Proof of concept</Heading>
-            <Appear><Text>Authentication library</Text></Appear>
-          </Slide>
-
           <Slide>
             <Heading>Thank you</Heading>
           </Slide>

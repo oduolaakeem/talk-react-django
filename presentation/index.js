@@ -396,11 +396,7 @@ export default class Presentation extends React.Component {
 
           <Slide>
             <Heading>Django-like React framework?</Heading>
-            <Text>... let's call it Reznor for now.</Text>
-          </Slide>
-
-          <Slide>
-            <Heading>Reusable apps</Heading>
+            <Appear><Text>Reusable apps</Text></Appear>
             <Appear><Text>Configurable</Text></Appear>
           </Slide>
 

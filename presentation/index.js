@@ -96,7 +96,7 @@ export default class Presentation extends React.Component {
             <Heading>Diversity</Heading>
           </Slide>
 
-          <Slide>
+          <Slide notes="full-time django, full-time react, now working on both">
             <Heading>Shared knowledge</Heading>
           </Slide>
 
@@ -393,6 +393,13 @@ export default class Presentation extends React.Component {
             <Heading>What about ReactJS?</Heading>
           </Slide>
 
+          <Slide>
+            <Heading fit>Tip of the iceberg</Heading>
+            <Appear><Text>Bundler and compiler (webpack, browserify)</Text></Appear>
+            <Appear><Text>Data (Redux, Flux, ...)</Text></Appear>
+            <Appear><Text>REST API (tons of libs)</Text></Appear>
+          </Slide>
+
           <Slide notes="React isn't as mature as Django">
             <Heading>Best practices varies</Heading>
             <Text>And evolve very quickly</Text>
@@ -401,13 +408,6 @@ export default class Presentation extends React.Component {
           <Slide>
             <Heading>No reusable apps</Heading>
             <Text>Only components</Text>
-          </Slide>
-
-          <Slide>
-            <Heading fit>Tip of the iceberg</Heading>
-            <Appear><Text>Bundler and compiler (webpack, browserify)</Text></Appear>
-            <Appear><Text>Data (Redux, Flux, ...)</Text></Appear>
-            <Appear><Text>REST API (tons of libs)</Text></Appear>
           </Slide>
 
           <Slide>

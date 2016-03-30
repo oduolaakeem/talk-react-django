@@ -404,20 +404,21 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide>
-            <Heading>The tip of the iceberg</Heading>
+            <Heading fit>Tip of the iceberg</Heading>
             <Appear><Text>Bundler and compiler (webpack, browserify)</Text></Appear>
             <Appear><Text>Data (Redux, Flux, ...)</Text></Appear>
             <Appear><Text>REST API (tons of libs)</Text></Appear>
           </Slide>
 
           <Slide>
-            <Heading>Django-like React framework?</Heading>
+            <Heading fit>Django-like React framework?</Heading>
             <Appear><Text>Reusable apps</Text></Appear>
             <Appear><Text>Configurable</Text></Appear>
           </Slide>
 
           <Slide>
             <Heading>Thank you</Heading>
+            <Text lineHeight={2}>http://tricoder42.github.io/talk-react-django</Text>
           </Slide>
         </Deck>
       </Spectacle>

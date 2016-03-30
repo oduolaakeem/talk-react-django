@@ -3,4 +3,4 @@ function HelloWorld(props) {
   return <div>Hello {name}</div>;
 }
 
-ReactDOM.render(<HelloWorld name="Budapest" />, mountNode);
+ReactDOM.render(<HelloWorld name="Budapest" />, el);

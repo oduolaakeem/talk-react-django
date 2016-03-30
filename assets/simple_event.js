@@ -6,4 +6,4 @@ function Link(props) {
   );
 }
 
-ReactDOM.render(<HelloWorld name="Budapest" />, mountNode);
+ReactDOM.render(<HelloWorld name="Budapest" />, el);

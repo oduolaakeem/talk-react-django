@@ -38,7 +38,6 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   reactLogo: require("../assets/react-logo.png"),
-  insertList: require("../assets/insert_list.png"),
   vdom: require("../assets/vdom.svg")
 };
 
@@ -61,7 +60,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={["fade"]} transitionDuration={200}>
+        <Deck transition={["fade"]} transitionDuration={200} progress="bar">
           {/* What is ReactJS? */}
           <Slide notes="Introduction and thank you">
             <Heading fit caps>What is ReactJS</Heading>
@@ -90,6 +89,8 @@ export default class Presentation extends React.Component {
             <Appear><Text>Backend. Frontend.</Text></Appear>
             <Appear><Text>UX. Design. DevOps.</Text></Appear>
           </Slide>
+
+          <Slide notes="Why am I talking about this" />
 
           <Slide notes="What triathlon and web development have in common">
             <Heading>Diversity</Heading>
@@ -136,6 +137,7 @@ export default class Presentation extends React.Component {
               lang="jsx"
               source={require("!!raw!../assets/simple_component.js")}
               margin="20px auto"
+              textSize={28}
             />
           </Slide>
 
@@ -145,12 +147,13 @@ export default class Presentation extends React.Component {
               lang="jsx"
               source={require("!!raw!../assets/simple_event.js")}
               margin="20px auto"
+              textSize={28}
             />
           </Slide>
 
           <Slide>
             <Heading>That's all!</Heading>
-            <Heading size={2}>Thank you</Heading>
+            <Heading size={3}>Thank you</Heading>
           </Slide>
 
           <Slide>
@@ -163,6 +166,10 @@ export default class Presentation extends React.Component {
               <Quote textColor="black">Do one thing<br /> and do it well</Quote>
               <Cite>Unix philosophy</Cite>
             </BlockQuote>
+          </Slide>
+
+          <Slide notes="What's so special">
+            <Heading>Rendering</Heading>
           </Slide>
 
           <Slide notes="Speed of templates is rarely a bottleneck">
@@ -202,6 +209,8 @@ export default class Presentation extends React.Component {
             <Heading size={2} fit>DOM speed is always a bottleneck</Heading>
           </Slide>
 
+          <Slide notes="Prepare for JSX" />
+
           <Slide>
             <Heading>What's the JSX?</Heading>
           </Slide>
@@ -213,6 +222,7 @@ export default class Presentation extends React.Component {
               lang="jsx"
               source={require("!!raw!../assets/simple_component.js")}
               margin="20px auto"
+              textSize={28}
             />
           </Slide>
 
@@ -222,6 +232,7 @@ export default class Presentation extends React.Component {
               lang="jsx"
               source={require("raw!../assets/simple_component.js")}
               margin="20px auto"
+              textSize={28}
             />
           </Slide>
 
@@ -230,18 +241,20 @@ export default class Presentation extends React.Component {
             <Heading>not revolution</Heading>
           </Slide>
 
+          <Slide notes="Prepare for components vs. templates" />
+
           <Slide notes="Django and React, another difference">
             <Heading>Components vs. Templates</Heading>
           </Slide>
 
           <Slide>
             <Heading>Django Templates</Heading>
-            <Heading size={2} fit>Inheritance and custom tags</Heading>
+            <Heading size={2} fit>Top to bottom</Heading>
           </Slide>
 
           <Slide>
             <Heading>React Components</Heading>
-            <Heading size={2} fit>Separation of concerns</Heading>
+            <Heading size={2} fit>Bottom to top</Heading>
           </Slide>
 
           <Slide>
@@ -250,6 +263,7 @@ export default class Presentation extends React.Component {
               lang="html"
               source={require("!!raw!../assets/bootstrap_component.html")}
               margin="20px auto"
+              textSize={28}
             />
           </Slide>
 
@@ -259,11 +273,13 @@ export default class Presentation extends React.Component {
               lang="jsx"
               source={require("!!raw!../assets/bootstrap_component.js")}
               margin="20px auto"
+              textSize={28}
             />
           </Slide>
 
           <Slide>
             <Heading>Advantages</Heading>
+            <Appear><Text>Separation of concerns</Text></Appear>
             <Appear><Text>Composable</Text></Appear>
             <Appear><Text>Testable</Text></Appear>
           </Slide>
@@ -403,7 +419,6 @@ export default class Presentation extends React.Component {
           <Slide>
             <Heading>Thank you</Heading>
           </Slide>
-
         </Deck>
       </Spectacle>
     );
